@@ -9,10 +9,10 @@ export const AppRoutes = () => {
     return (
         <div>
             <Routes>
-                <Route path='*' element={<NotFound />}/>
-
                 <Route path='/' element={<Index />}/>
                 <Route path='/home' element={<Home />}/>
+                <Route path='not found' element={<NotFound />}/>
+                <Route path='*' element={<Navigate to="/notfound" replace />} />
             </Routes>
         </div>
 

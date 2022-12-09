@@ -11,7 +11,7 @@ export const AppRoutes = () => {
             <Routes>
                 <Route path='/' element={<Index />}/>
                 <Route path='/home' element={<Home />}/>
-                <Route path='*' element={<NotFound />}/>
+                <Route element={<NotFound />}/>
             </Routes>
         </div>
 
